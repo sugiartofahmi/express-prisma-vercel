@@ -15,7 +15,7 @@ const generateToken = {
       { id: payload.id, email: payload.email },
       process.env.REFRESH_TOKEN_SECRET,
       {
-        expiresIn: "2m",
+        expiresIn: "1d",
       }
     );
     const userToken = await prisma.Token.findUnique({
