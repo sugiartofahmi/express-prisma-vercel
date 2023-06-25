@@ -5,7 +5,6 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "npx prisma migrate deploy ",
     "dev": "nodemon server.js",
     "start": "node server.js",
     "migrate:dev": "npx prisma migrate dev"
