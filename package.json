@@ -6,10 +6,12 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
+    "build": "node migrate:deploy",
     "start": "node server.js",
-    "generate": "npx prisma generate",
-    "deploy": "npx prisma migrate deploy",
-    "build": "npm run generate"
+    "migrate:dev": "prisma migrate dev",
+    "migrate:deploy": "prisma migrate deploy",
+    "migrate:status": "prisma migrate status",
+    "generate": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^4.16.1",
