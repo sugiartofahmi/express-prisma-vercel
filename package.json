@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
-    "build": "yarn migrate:deploy",
+    "vercel-build": "prisma generate && prisma migrate deploy",
     "start": "node server.js",
     "migrate:dev": "prisma migrate dev",
     "migrate:deploy": "prisma migrate deploy",
