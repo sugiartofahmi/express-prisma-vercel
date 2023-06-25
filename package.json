@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "npx prisma migrate deploy && server.js",
+    "start": "npx prisma migrate deploy && node server.js",
     "migrate:dev": "npx prisma migrate dev"
   },
   "dependencies": {
