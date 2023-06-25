@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "migrate:dev": "npx prisma migrate dev"
+    "generate": "npx prisma generate",
+    "deploy": "npx prisma migrate deploy",
+    "build": "npm run generate"
   },
   "dependencies": {
     "@prisma/client": "^4.16.1",
