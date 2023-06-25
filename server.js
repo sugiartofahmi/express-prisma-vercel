@@ -29,3 +29,5 @@ app.all("*", (req, res) => {
 app.listen(port, () => {
   console.info(`Server running on port ${port}`);
 });
+
+export default app;
