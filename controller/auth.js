@@ -119,7 +119,7 @@ export const login = async (req, res) => {
 export const logout = async (req, res) => {
   try {
     const { refresh_token } = req.body;
-    const token = await prisma.Token.findUnique({
+    const token = await prisma.Token.delete({
       where: {
         token: refresh_token,
       },
