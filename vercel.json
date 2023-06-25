@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.js",
+      "src": "server.js",
       "use": "@now/node"
     }
   ],
@@ -10,7 +10,7 @@
     {
       "src": "/(.*)",
 
-      "dest": "index.js"
+      "dest": "server.js"
     }
   ]
 }
