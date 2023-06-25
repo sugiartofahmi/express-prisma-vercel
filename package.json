@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "npx prisma migrate deploy && server.js",
+    "migrate:dev": "npx prisma migrate dev"
   },
   "dependencies": {
     "@prisma/client": "^4.16.1",
