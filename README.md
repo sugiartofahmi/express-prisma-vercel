@@ -1,4 +1,4 @@
-# Express Mongodb JWT
+# Express Prisma JWT
 
 Learn to create authentication with express js
 
